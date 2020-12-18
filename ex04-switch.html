@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function switFunc(expr) {
+        switch (expr) {
+            case 'Oranges':
+                document.write('Oranges are $0.59 a pound.');
+                break;
+            case 'Apples':
+            document.write('Apples are $0.32 a pound.');
+                break;
+            case 'Bananas':
+            document.write('Bananas are $0.48 a pound.');
+                break;
+            case 'Cherries':
+            document.write('Cherries are $3.00 a pound.');
+                break;
+            case 'Mangoes':
+            case 'Papayas':
+            document.write('Mangoes and papayas are $2.79 a pound.');
+                break;
+            default:
+            document.write('Sorry, we are out of ' + expr + '.');
+    }
+
+    }
+   switFunc("Applfwefwefewes")   
+    </script>
+</body>
+</html>

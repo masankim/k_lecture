@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<caption> 책 주문 입력 내용 </caption>");
+        document.write("<tr>");
+        document.write("<th> 번호 </th> <th> 제목 </th>");
+        document.write("</tr>");
+        var book1 = "IT: 컴퓨터와 IT기술의 이해 [개정판-2판]";
+        var book2 = "SNS: 소셜미디어의 이해와 활용";
+        var book3 = "Multimedia: 멀티미디어 배움터 2.0";
+        var n = prompt("주문할 책 수량을 입력 하세요.","1");
+        console.log(typeof(n))
+        for(let i = 0; i <n; i++) {
+        var book_list = book1 + "\n" + book2 + "\n" + book3;
+        var choice = prompt("책 제목을 선택하세요...\n" + book_list, "1");
+            if (choice == "IT")
+            title = book1;
+            else if (choice == "SNS")
+            title = book2;
+            else if (choice == "Multimedia")
+            title = book3;
+            else {
+            alert("리스트에 없는 책을 선택하셨습니다.");
+            title = "";
+        }
+        document.write("<tr>");
+        document.write("<td>" + (i+1) + "</td>");
+        document.write("<td>" + title + "</td>");
+        document.write("</tr>");
+        }
+    </script>
+</body>
+</html>
